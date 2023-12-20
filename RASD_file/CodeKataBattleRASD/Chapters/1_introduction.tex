@@ -1,0 +1,196 @@
+%chapters 1, introduction
+\section{Introduction}
+\vspace{1.5\baselineskip}
+
+\subsection{Purpose}
+The aim of the 'CodeKataBattle' project is to facilitate the improvement of students' programming skills through training with programming exercises known as CodeKata. In addition, it enables teachers to organise tournaments containing a series of CodeKata battles, offering teams of students the opportunity to participate in such competitions, promoting the development of their programming and problem solving skills.
+
+\vspace{1\baselineskip}
+\subsubsection{Goal}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item [{[G1]}] Educator administers the tournaments and decides and manages the battles within them.
+    \item [{[G2]}] Students participate in tournaments by taking part in related battles, either individually or in groups.
+    \item [{[G3]}] The tournament implements a ranking derived from each student's individual score. This score is determined by aggregating the scores acquired by the student in each battle in which he took part.
+\end{itemize}
+
+\clearpage
+
+\subsection{Scope}
+In recent years, with the constant progress of information technology, the demand for
+people with excellent software development skills has steadily increased.
+\newline
+CodeKataBattle is a system that allows through the interface the ability to participate
+in tournaments where the student can find a series of battles and decide which ones to
+participate in as an individual or by forming a team with other students.
+\newline
+All students participating in the battle will be sent a link of the main GitHub repository containing the CodeKata project on which they will be working.
+\newline
+The system will show the team's current score with each push the team makes on their repository GitHub, this score is automatically analyzed by the system and a third-party tool, on some predefined aspects and some chosen by the educator.
+\newline
+In addition, the system provides the teams participating in the battle and educators with
+the ranking of the current battle. Once the battle with its ranking is over, the system
+informs all participants in the battle.
+\newline
+On the other hand, the system provides the educator with an interface to create and close tournaments and to invite other educators to create new battles in the context of the tournament.
+\newline
+At the creation of each battle, the system gives the opportunity to upload the CodeKata specifying a set of information inherent to the battle.
+\newline
+When a tournament is closed, the system notifies all tournament participants of the final ranking.
+
+
+\vspace{0.5\baselineskip}
+\subsubsection{World Phenomena}
+Phenomena events that take place in the real world and that the machine cannot observe.
+\begin{itemize}[left=20pt]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item [{[W1]}] Student wants to improve his software development skills
+    \item [{[W2]}] Student forks GitHub repository
+    \item [{[W3]}] Student set up an automated workflow through GitHub Actions
+    \item [{[W4]}] Students who are part of a team discuss implementations to be performed on the project
+    \item [{[W5]}] Educator creates the codekata project
+\end{itemize}
+
+
+
+\vspace{0.5\baselineskip}
+\subsubsection{Shared Phenomena}
+Phenomena controlled by the world and observed by the machine.
+\begin{itemize}[left=20pt]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item [{[SP1]}] Student signs up for a tournament
+    \item [{[SP2]}] Student unsubscribes from tournament
+    \item [{[SP3]}] Student signs up for a battle
+    \item [{[SP4]}] Student invites other students to form battle team
+    \item [{[SP5]}] Student makes a push on GitHub
+    \item [{[SP6]}] Student accept or decline the invitation to battle
+    \item [{[SP7]}] Educator opens a tournament
+    \item [{[SP8]}] Educator closes a tournament
+    \item [{[SP9]}] Educator invites other educators to participate in their own tournament
+    \item [{[SP10]}] Educator creates and configures a battle
+    \item [{[SP11]}] Educator associates a score to a group's final project
+    \item [{[SP12]}] Educator accept or decline the invitation to tournament
+\end{itemize}
+
+\begin{flushleft}
+Phenomena controlled by the machine and observed by the world.
+\begin{itemize}[left=20pt]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item [{[SP13]}] System shows the tournaments 
+    \item [{[SP14]}] System shows the battles of the tournament
+    \item [{[SP15]}] System shows the current score and ranking to each team in the battle
+    \item [{[SP16]}] System shows and notifies the final ranking of a battle to the students who participate in such a battle
+    \item [{[SP17]}] System shows the ranking of the tournament to all users of the platform
+    \item [{[SP18]}] System notifies all registered students when a tournament is opened
+    \item [{[SP19]}] System notifies all tournament participants when a battle is created
+    \item [{[SP20]}] System sends GitHub repository link
+\end{itemize}
+\end{flushleft}
+
+
+\vspace{0.5\baselineskip}
+\subsubsection{Machine Phenomena}
+Phenomena performed by the machine that the world cannot observe.
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item [{[M1]}] System analyses the project and calculates the score
+    \item [{[M2]}] System creates the GitHub repository
+\end{itemize}
+
+
+
+
+\vspace{1\baselineskip}
+\subsection{Definitions, Acronyms, Abbreviations}
+
+
+\vspace{0.5\baselineskip}
+\subsubsection{Definitions}
+\begin{itemize}
+    \item \textbf{Fork the GitHub repository}: This action means creating one's own independent copy of a project hosted on GitHub. This operation allows a user to work on a version of the project without directly affecting the original repository.
+    \item \textbf{GitHub Actions}: GitHub Actions is an automation service built directly into GitHub that allows developers to automate software workflow. It allows processes to be defined, customized and automated through a series of actions performed in response to specific events within a GitHub repository.
+    \item \textbf{Test first-approach}: The Test-First approach has been known as Test-First Development or TDD. It is an integrated quality method used in the Extreme Programming methodology in which developers write unit tests before writing production code.
+\end{itemize}
+
+\vspace{0.5\baselineskip}
+\subsubsection{Acronyms}
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item \textbf{CKB} : CodeKataBattle
+    \item \textbf{CK} : CodeKata
+    \item \textbf{RASD} : Requirement Analysis and Specification Document.
+\end{itemize}
+
+
+\vspace{0.5\baselineskip}
+\subsubsection{Abbreviations}
+
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \item {[Gn]} - the n-th goal of the system
+    \item {[WPn]} - the n-th world phenomena
+    \item {[SPn]} - the n-th shared phenomena
+    \item {[UCn]} - the n-th use case
+    \item {[Rn]} - the n-th functional requirement
+\end{itemize}
+
+
+\vspace{1\baselineskip}
+\subsection{Revision history}
+\begin{itemize}
+    \item Version 1.0
+\end{itemize}
+
+
+\vspace{1\baselineskip}
+\subsection{Reference Documents}
+This document is based on:
+\begin{itemize}
+    \item The specification of the RASD and DD assignment of the Software
+Engineering II course, held by professor Matteo Rossi, Elisabetta Di Nitto and
+Matteo Camilli at the Politecnico di Milano, A.Y 2022/2023;
+    \item Slides of Software Engineering 2 course on WeBeep;
+\end{itemize}
+
+\vspace{1\baselineskip}
+\subsection{Document Structure}
+Mainly the current document is divided in 6 chapters, which are:
+\begin{enumerate}
+    \item \textbf{Introduction}: it aims to describe the environment and the demands taken into account for this project. In particular it’s focused on the reasons and the goals that are going to be achieved with its development;
+    \item \textbf{Overall Description}: it’s a high-level description of the system by focusing on the shared phenomena and the domain model (with its assumption);
+    \item \textbf{Specific Requirements}: it describes in very detail the requirements needed to reach the goals. In addition it contains more details useful for developers (i.e information about HW and SW interfaces);
+    \item \textbf{Formal Analysis}: this section contains a formal description of the main aspect of the World phenomena by using Alloy;
+    \item \textbf{Effort Spent}:  it shows the time spent to realize this document, divided for each section;
+    \item \textbf{References}:  it contains the references to any documents and to the Software used in this document.
+\end{enumerate}
+
+
+

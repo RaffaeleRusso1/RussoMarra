@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{enumitem}
+\counterwithin{figure}{section} %caption relativa alla section
+\usepackage{listings}
+\usepackage{color}
+\usepackage{lscape} 
+\usepackage{verbatim}
+\usepackage{comment}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Alloy,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+%frontespizio
+\include{Chapters/frontespizio}
+
+\clearpage
+
+\tableofcontents
+
+%Chapters 1
+\include{Chapters/1_introduction}
+
+\include{Chapters/2_Overall_Description}
+
+\include{Chapters/3_Specific_Requirements}
+
+\include{Chapters/4_Alloy}
+
+\include{Chapters/5_Time_Spent}
+
+\include{Chapters/6_References}
+
+
+
+\end{document}
