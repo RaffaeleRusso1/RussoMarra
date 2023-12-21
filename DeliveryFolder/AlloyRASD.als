@@ -20,7 +20,11 @@ sig Battle {
  	 creator: one Educator,                       //Battle creator
   	 participantTeams: set Team,              //Teams participating in the battle
 	 evaluator: disj one Evaluator,             //Each battle has a different evaluator
-	 has: disj one FinalRankingBattle         //Each battle has its own final ranking
+	 has: disj one FinalRankingBattle,       //Each battle has its own final ranking
+       	numMaxForTeam: Int,                       //Maximum number of students per team
+	numMinForTeam: Int                        //Minimum number of students per team  
+}{
+	numMinForTeam < numMaxForTeam and numMaxForTeam <= 5 and numMinForTeam >= 1
 }
 
 //Definition of the Team
@@ -44,7 +48,6 @@ abstract sig Proje {
 
 //Definition of a Project
 sig Project extends Proje{
-
 }
 
 //Definition of a LastProject
@@ -53,13 +56,20 @@ sig LastProject extends Proje{
 }
 
 //Definition of a Score 
-sig Score {
-}
+sig Score {}
+
 
 //Definition of a FinalRankingBattle
 sig FinalRankingBattle{
 	 basedOn: set Score                        //The final battle ranking is based on the scores 
 }
+
+
+//Maximum and minimum number of participants per team imposed by the battle
+fact NumMaxMinForTeam {
+	all tm: Team, b: Battle | tm in b.participantTeams implies (#tm.members <= b.numMaxForTeam and  #tm.members >= #numMinForTeam)
+}
+
 
 
 //All final battle rankings have a battle in which the following participate
@@ -180,13 +190,13 @@ fact CreatorIsMemberOfTeam {
 pred createScenario {
 	#Educator = 2
 
-	#Student = 5
+	#Student = 6
 
 	#Tournament = 1
 
 	#Battle = 2
 
-	#Team = 3
+	#Team = 2
 
 	#LastProject > 1
 
@@ -194,7 +204,7 @@ pred createScenario {
 }
 
 
-run createScenario for 5
+run createScenario for 20
 
 
 
